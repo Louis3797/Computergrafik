@@ -1,32 +1,32 @@
-﻿
+#pragma once
 
-#include <vector>
 #include <glm/glm.hpp>
 #include "GLSLProgram.h"
-#include "Object.cpp"
+#include "Object.h"
 
-class Orbit : public Object 
+class Orbit: public Object
 {
 
 public:
 
-    Orbit(cg::GLSLProgram& program, glm::mat4x4& view,
-        glm::mat4x4& projection, float radius);
+	Orbit(cg::GLSLProgram& program, glm::mat4x4& view,
+		glm::mat4x4& projection, float radius, glm::vec3 center, unsigned int numPoints);
 
-    ~Orbit();
+	~Orbit();
 
-    void draw();
 
-    void init();
+	void init();
 
+	void draw();
 private:
-    float radius;
-    std::vector<float> positions;
 
-    cg::GLSLProgram& program;
-    glm::mat4x4& view;
-    glm::mat4x4& projection;
+	unsigned int numPoints;
+	glm::vec3 center;
+	float radius;
 
+	cg::GLSLProgram& program;
+	glm::mat4x4& view;
+	glm::mat4x4& projection;
 protected:
-
 };
+

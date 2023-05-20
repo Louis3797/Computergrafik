@@ -3,7 +3,7 @@
 #include <vector>
 #include <glm/glm.hpp>
 #include "GLSLProgram.h"
-#include "Object.cpp"
+#include "Object.h"
 
 
 class Octahedron: public Object

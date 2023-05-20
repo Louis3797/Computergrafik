@@ -163,6 +163,7 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="CelestialBodyAxis.cpp" />
     <ClCompile Include="GLSLProgram.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Object.cpp" />
@@ -171,8 +172,10 @@
     <ClCompile Include="SolarSystem.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="CelestialBodyAxis.h" />
     <ClInclude Include="GLSLProgram.h" />
     <ClInclude Include="GLTools.h" />
+    <ClInclude Include="Object.h" />
     <ClInclude Include="Octahedron.h" />
     <ClInclude Include="Orbit.h" />
     <ClInclude Include="SolarSystem.h" />
